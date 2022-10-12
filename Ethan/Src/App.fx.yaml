@@ -1,0 +1,22 @@
+App As appinfo:
+    BackEnabled: =false
+    OnError: ="Error"
+    OnStart: |+
+        =// Obtain username and email of the logged-in user
+        Set(varLoggedInUser, User());
+        
+        // Find the user with a matching email in the App Users list
+        With(
+            {wUserRecord: LookUp('App Users', User.Email=varLoggedInUser.Email)},
+            Set(varUser, wUserRecord.User);
+            Set(varRole, wUserRecord.Role.Value)
+        );
+        Set(varMileageRate, LookUp('Mileage Rate', Id = 1);
+        Set(AdminPermission, false);
+        Set(SupervisorPermission, false);
+        
+        If (varRole = "Administrator",Set(AdminPermission, true) & Set(SupervisorPermission, true));
+        If (varRole = "Supervisor",Set(SupervisorPermission, true));
+        
+        
+

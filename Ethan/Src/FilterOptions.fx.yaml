@@ -1,0 +1,133 @@
+FilterOptions As screen:
+    Fill: =RGBA(227, 242, 243, 1)
+
+    LandingTitle_1 As label:
+        Align: =Align.Center
+        Height: =207
+        Size: =45
+        Text: ="Tuscaloosa's One Place"
+        Width: =568
+        X: =393
+        Y: =30
+        ZIndex: =1
+
+    LandingSubtitle_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Lighter
+        Height: =63
+        Size: =22
+        Text: ="How would you like to filter the Timesheet?"
+        Width: =670
+        X: =342
+        Y: =237
+        ZIndex: =4
+
+    BrowseLock_3 As icon.Lock:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Icon: =Icon.Lock
+        Width: =40
+        X: =1296
+        Y: =12
+        ZIndex: =5
+
+    BrowseLockText_3 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Size: =20
+        Text: =varRole
+        Width: =263
+        Y: =12
+        ZIndex: =6
+
+    SupervisorButton_1 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate('FilterByEmployeesW/Mileage');
+        Size: =18
+        Text: ="Employees with Mileage"
+        Width: =229
+        X: =732
+        Y: =346
+        ZIndex: =7
+
+    Logo_1 As image:
+        Image: =black
+        X: =1266
+        Y: =651
+        ZIndex: =9
+
+    TimesheetButton_1 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate(FilterByEmployee);
+        Size: =18
+        Text: ="By Employee"
+        Width: =229
+        X: =393
+        Y: =346
+        ZIndex: =10
+
+    AdminButton_1 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate(AdminBrowse)
+        Size: =18
+        Text: ="Admin View"
+        Visible: =AdminPermission
+        Width: =229
+        X: =562
+        Y: =633
+        ZIndex: =11
+
+    TimesheetButton_2 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate(FilterByProgram);
+        Size: =18
+        Text: ="By Program"
+        Width: =229
+        X: =393
+        Y: =489
+        ZIndex: =12
+
+    TimesheetButton_3 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate(FilterByEmployeesNoMileage);
+        Size: =18
+        Text: ="Employees without Mileage"
+        Width: =229
+        X: =732
+        Y: =489
+        ZIndex: =13
+
+    TimesheetButton_4 As button:
+        BorderThickness: =0
+        Fill: =RGBA(12, 93, 198, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Normal
+        Height: =93
+        OnSelect: =Navigate(AdminBrowse)
+        Size: =18
+        Text: ="EXIT"
+        Width: =229
+        X: =581
+        Y: =633
+        ZIndex: =14
+

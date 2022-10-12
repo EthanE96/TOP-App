@@ -1,0 +1,336 @@
+SupervisorBrowse As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+
+    BrowseHead_9 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(12, 93, 198, 1)
+        Height: =91
+        Width: =1366
+        ZIndex: =1
+
+    BrowseTitle_9 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =77
+        Size: =30
+        Text: ="Supervisor View"
+        Width: =370
+        X: =82
+        Y: =7
+        ZIndex: =2
+
+    BrowseTOP_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Lighter
+        Size: =12
+        Text: ="Tuscaloosa's One Place"
+        Width: =258
+        X: =554
+        Y: =728
+        ZIndex: =3
+
+    DetailBackArrow_9 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =46
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(LandingPage, ScreenTransition.None)
+        Width: =46
+        X: =34
+        Y: =22
+        ZIndex: =5
+
+    Rectangle2_9 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =545
+        Width: =1201
+        X: =102
+        Y: =147
+        ZIndex: =7
+
+    Rectangle3_6 As rectangle:
+        Fill: =RGBA(12, 93, 198, 1)
+        Height: =45
+        Width: =1201
+        X: =102
+        Y: =147
+        ZIndex: =9
+
+    BrowseAdd_5 As icon.Add:
+        AccessibleLabel: =
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =31
+        Icon: =Icon.Add
+        OnSelect: |-
+            =NewForm(HoursEditForm);
+            Navigate(HoursEdit, ScreenTransition.None)
+        Width: =31
+        X: =1252
+        Y: =152
+        ZIndex: =10
+
+    BrowseRefresh_5 As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Time / Mileage Report')
+        Width: =24
+        X: =1216
+        Y: =159
+        ZIndex: =11
+
+    Label3_34 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Justifiy
+            "
+        Width: =116
+        X: =1023
+        Y: =145
+        ZIndex: =18
+
+    BrowseSort_5 As icon.ArrowsUpDown:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =31
+        Icon: =Icon.Sort
+        Width: =30
+        X: =1171
+        Y: =154
+        ZIndex: =19
+
+    Label3_35 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Name
+            "
+        Width: =116
+        X: =115
+        Y: =148
+        ZIndex: =20
+
+    Label3_36 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Date
+            "
+        Width: =116
+        X: =259
+        Y: =149
+        ZIndex: =21
+
+    Label3_37 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Hours
+            "
+        Width: =116
+        X: =522
+        Y: =145
+        ZIndex: =22
+
+    Label3_38 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Program
+            "
+        Width: =116
+        X: =386
+        Y: =148
+        ZIndex: =23
+
+    Label3_39 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Mileage
+            "
+        Width: =116
+        X: =645
+        Y: =145
+        ZIndex: =24
+
+    Label3_29 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =15
+        Text: ="Mileage Cost"
+        X: =761
+        Y: =145
+        ZIndex: =25
+
+    Image1_15 As image:
+        Height: =70
+        Image: =white
+        OnSelect: =Navigate(LandingPage);
+        Width: =70
+        X: =1266
+        Y: =10
+        ZIndex: =26
+
+    BrowseUser_6 As icon.Person:
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =35
+        Icon: =Icon.Person
+        Width: =35
+        X: =519
+        Y: =31
+        ZIndex: =27
+
+    BrowseLock_8 As icon.Lock:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =35
+        Icon: =Icon.Lock
+        Width: =35
+        X: =777
+        Y: =31
+        ZIndex: =28
+
+    BrowseUserText_6 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Size: =16
+        Text: =varUser.DisplayName
+        Width: =173
+        X: =553
+        Y: =28
+        ZIndex: =29
+
+    BrowseLockText_8 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        Size: =16
+        Text: =varRole
+        Width: =162
+        X: =816
+        Y: =28
+        ZIndex: =30
+
+    SupervisorBrowseForm As gallery.galleryVertical:
+        Height: =445
+        Items: |
+            =
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(SupervisorDetail, ScreenTransition.None)
+        TemplateSize: =93
+        Width: =1154
+        X: =125
+        Y: =214
+        ZIndex: =31
+
+        Label7 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.User.DisplayName
+            ZIndex: =1
+
+        Label8 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            X: =156
+            ZIndex: =2
+
+        Label9 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            Width: =85
+            X: =412
+            ZIndex: =3
+
+        Label10 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Value
+            X: =279
+            ZIndex: =4
+
+        Label11 As label:
+            OnSelect: =Select(Parent)
+            Text: =Text(ThisItem.Mileage, "0.00")
+            X: =534
+            ZIndex: =5
+
+        Label11_1 As label:
+            OnSelect: =Select(Parent)
+            Text: ="$" & Text(ThisItem.'Mileage Costs', "0.00")
+            X: =651
+            ZIndex: =6
+
+        Checkbox1 As checkbox:
+            Height: =40
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Justified
+            Width: =111
+            X: =903
+            ZIndex: =8
+
+        Icon2 As icon.Cancel:
+            Height: =40
+            Icon: =Icon.Cancel
+            OnSelect: =Select(Parent)
+            Width: =35
+            X: =1040
+            ZIndex: =9
+
+        Icon3 As icon.Edit:
+            Height: =37
+            Icon: =Icon.Edit
+            OnSelect: =Select(Parent)
+            Width: =29
+            X: =1086
+            ZIndex: =10
+
+        Label11_2 As label:
+            OnSelect: =Select(Parent)
+            Text: =
+            X: =776
+            ZIndex: =11
+
+    Label3_40 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =15
+        Text: |-
+            ="Manage By
+            "
+        Width: =116
+        X: =908
+        Y: =146
+        ZIndex: =32
+

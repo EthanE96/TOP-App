@@ -1,0 +1,38 @@
+{
+  "9a8efec6-d5ff-4db4-9011-b818fc41aae9": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://tuscaloosaoneplace.sharepoint.com/sites/TuscaloosaOnePlaceAdmin": {
+        "dataSources": {
+          "App Users": {
+            "tableName": "09e25106-f10d-4773-a084-711e09b926fc"
+          },
+          "Mileage Rate": {
+            "tableName": "24eb5d60-0003-4997-968d-4085b60fb987"
+          },
+          "Time / Mileage Report": {
+            "tableName": "b9c6ff3c-e5ee-45b3-b896-061d6011022d"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Time / Mileage Report",
+      "Mileage Rate",
+      "App Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9a8efec6-d5ff-4db4-9011-b818fc41aae9"
+  }
+}

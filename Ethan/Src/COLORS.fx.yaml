@@ -1,0 +1,39 @@
+COLORS As screen:
+
+    Label1 As label:
+        Text: ="Light Blue"
+        X: =121
+        Y: =141
+        ZIndex: =1
+
+    Label1_1 As label:
+        Text: ="Blue"
+        X: =121
+        Y: =231
+        ZIndex: =2
+
+    Label1_2 As label:
+        Text: ="E3F2F3"
+        X: =255
+        Y: =141
+        ZIndex: =3
+
+    Label1_3 As label:
+        Text: ="0C5DC6"
+        X: =255
+        Y: =231
+        ZIndex: =4
+
+    Label1_4 As label:
+        Text: ="Font"
+        X: =105
+        Y: =319
+        ZIndex: =5
+
+    Label1_5 As label:
+        Text: ="Late - Headings Semi Bold"
+        Width: =267
+        X: =237
+        Y: =319
+        ZIndex: =6
+
